@@ -1,0 +1,318 @@
+body,html,h1,h2,ul{
+  margin: 0;
+  padding: 0;
+}
+//body,html{
+//  width: 100%;
+//}
+h1{
+  display: inline-block;
+  color: #fff;
+  font-size: 100px;
+}
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+
+#menu .active a { color: #fff; background-color: #333;}
+
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+
+
+//第一屏
+.one{
+  .hello{
+    padding-top: 200px;
+    h1{
+      padding-left: 30px;
+      padding-right: 30px;
+      opacity: 0;
+    }
+    p{
+      font-size: 50px;
+      color: #fff;
+      opacity: 0;
+    }
+  }
+}
+//动画
+.one.current{
+  .hello{
+    h1{
+      padding-left: 0;
+      padding-right: 0;
+      opacity: 1;
+      transition: all 1.5s;
+    }
+    p{
+      opacity: 1;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      transition: all 2s;
+    }
+  }
+}
+
+//第二屏
+.two{
+  .person{
+    padding-top: 100px;
+    h2{
+      font-size: 50px;
+    }
+    p{
+      font-size: 20px;
+      text-align: left;
+      margin-left: 25%;
+      padding-right: 20%;
+      opacity: 0;
+    }
+  }
+  img{
+    width: 300px;
+    height: 300px;
+      position: absolute;
+    top:302px;
+    left:860px;
+  }
+}
+//动画
+.two.current{
+  .person{
+    p{
+      opacity: 1;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      transition: all 2s;
+    }
+  }
+}
+
+//第三屏
+.three{
+  h2{
+    font-size: 70px;
+  }
+  .list{
+    width: 80%;
+    margin: 0 auto 0;
+    .h{
+      display:inline-block;
+      margin: 0 0% ;
+      &:nth-of-type(1){
+        img{
+          transform: translate(-100px, -178px) rotate(-250deg);;
+        }
+      }
+      &:nth-of-type(2){
+        img{
+          transform: translate(135px, 150px) rotate(60deg);
+        }
+      }
+      &:nth-of-type(3){
+        img{
+          transform: translate(187px, -100px) rotate(35deg);
+        }
+      }
+      &:nth-of-type(4){
+        img{
+          transform: translate(200px, 100px) rotate(250deg);
+        }
+      }
+      &:nth-of-type(5){
+        img{
+          transform: translate(-200px, 50px) rotate(-180deg);
+        }
+      }
+      &:nth-of-type(6){
+        img{
+          transform: translate(-41px, 94px) rotate(80deg);
+        }
+      }
+      &:nth-of-type(7){
+        img{
+          transform: translate(-90px, -400px) rotate(120deg);
+        }
+      }
+      &:nth-of-type(8){
+        img{
+          transform: translate(-125px, 100px) rotate(99deg);
+        }
+      }
+      &:nth-of-type(9){
+        img{
+          transform: translate(-160px, 100px) rotate(75deg);
+        }
+      }
+      &:nth-of-type(10){
+        img{
+          transform: translate(-15px, 50px) rotate(-99deg);
+        }
+      }
+      img{
+        width: 50%;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      p{
+        font-size: 50%;
+        opacity: 0;
+      }
+    }
+  }
+}
+//动画
+.three.current{
+  .list{
+    .h{
+      img{
+        transform: translate(0, 0) rotate(0deg);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+      p{
+        opacity: 1;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -ms-transition: all 2s;
+        -o-transition: all 2s;
+        transition: all 2s;
+      }
+    }
+  }
+
+}
+
+//第四屏
+.four{
+  .slide{
+    .content{
+      img{
+        width: 200px;
+        height: 400px;
+        &:nth-of-type(1){
+          transform: translate(0, -100%);
+        }
+        &:nth-of-type(2){
+          transform: translate(0, 100%);
+        }
+        &:nth-of-type(3){
+          transform: translate(0, -100%);
+        }
+        &:nth-of-type(4){
+          transform: translate(0, 100%);
+        }
+        &:nth-of-type(5){
+          transform: translate(0, -100%);
+        }
+      }
+    }
+    .content2{
+      img{
+        width: 400px;
+        height: 200px;
+        &:nth-of-type(1){
+          transform: translate(0, -100%);
+        }
+        &:nth-of-type(2){
+          transform: translate(0, 100%);
+        }
+        &:nth-of-type(3){
+          transform: translate(0, -100%);
+        }
+        &:nth-of-type(4){
+          transform: translate(0, 100%);
+        }
+        &:nth-of-type(5){
+          transform: translate(0, -100%);
+        }
+      }
+    }
+    p{
+      margin: 0 auto;
+      width: 40%;
+      font-size: 20px;
+      opacity: 0;
+    }
+  }
+}
+//动画
+.four.current{
+  .slide{
+    .content{
+      margin-top: 100px;
+      img{
+        width: 200px;
+        height: 400px;
+        margin: 0 20px;
+        &:hover{
+          transform: scale(1.5);
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+        }
+        transform: translate(0, 0);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+      }
+    }
+    .content2{
+      img{
+        width: 400px;
+        height: 200px;
+        &:hover{
+          transform: scale(1.5);
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+        }
+        transform: translate(0, 0);
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+      }
+    }
+    p{
+      opacity: 1;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      transition: all 2s;
+    }
+  }
+}
+
+//第五屏
+.five{
+  h3{
+    font-size: 50px;
+  }
+  p{
+    width: 600px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+}
